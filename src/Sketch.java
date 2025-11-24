@@ -8,6 +8,7 @@ public class Sketch extends PApplet {
 
 
      boolean isDay;
+     int domeX;
 
 
     @Override
@@ -26,6 +27,15 @@ public class Sketch extends PApplet {
         soccerDome();
 
     }
+
+
+    private void soccerDome() {
+    domeX = (int) random(0, width);
+    fill(255, 255, 255);
+    ellipse(domeX, 400, 300, 300);
+    }
+    
+    
     private void timeOfDay() {
     int i = (int) random(1, 100);  // random number to determine day or night
 
