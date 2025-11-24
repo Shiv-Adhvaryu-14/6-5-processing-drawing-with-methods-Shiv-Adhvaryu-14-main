@@ -21,6 +21,7 @@ public class Sketch extends PApplet {
         background(120, 197, 227);  // Cyan background colour
         
         timeOfDay();
+        sunMoon();
         cityScape();
 
     }
@@ -36,6 +37,21 @@ public class Sketch extends PApplet {
         background(29, 25, 54);
         isDay = false;
     }
+    }
+
+    private void sunMoon() {
+        if (isDay) {
+            // SUN
+            fill(255, 247, 0);
+            noStroke();
+            ellipse(850, 80, 80, 80);
+        } else {
+            // MOON
+            fill(240, 240, 255);
+            noStroke();
+            ellipse(850, 80, 80, 80);
+
+        }
     }
 
  private void cityScape() {
