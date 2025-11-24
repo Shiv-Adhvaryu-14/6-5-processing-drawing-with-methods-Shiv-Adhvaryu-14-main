@@ -52,7 +52,18 @@ public class Sketch extends PApplet {
         }
     }
 
-    
+    private void buildingWindows(int startX, int w, int h) {
+    int windowSize = 10;
+    int spacing = 7;
+
+    for (int y = height - h + 20; y < height - 20; y += windowSize + spacing) {
+        for (int x = startX + 10; x < startX + w - 10; x += windowSize + spacing) {
+
+            fill(255, 230, 140);  // Windows with lights on
+            rect(x, y, windowSize, windowSize);
+        }
+    }
+}
 
 
 
