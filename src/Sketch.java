@@ -23,6 +23,7 @@ public class Sketch extends PApplet {
         timeOfDay();
         sunMoon();
         cityScape();
+        soccerDome();
 
     }
     private void timeOfDay() {
@@ -41,12 +42,12 @@ public class Sketch extends PApplet {
 
     private void sunMoon() {
         if (isDay) {
-            // SUN
+            // Sun
             fill(255, 247, 0);
             noStroke();
             ellipse(850, 80, 80, 80);
         } else {
-            // MOON
+            // Moon
             fill(240, 240, 255);
             noStroke();
             ellipse(850, 80, 80, 80);
@@ -82,7 +83,7 @@ public class Sketch extends PApplet {
     for (int y = height - h + 20; y < height - 20; y += windowSize + spacing) {
         for (int x = startX + 10; x < startX + w - 10; x += windowSize + spacing) {
 
-            fill(255, 230, 140);  // Windows with lights on
+            fill(255, 230, 140);  // Windows
             rect(x, y, windowSize, windowSize);
         }
     }
