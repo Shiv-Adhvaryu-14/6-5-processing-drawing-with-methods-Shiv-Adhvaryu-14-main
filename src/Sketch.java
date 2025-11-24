@@ -5,6 +5,11 @@ public class Sketch extends PApplet {
         PApplet.main("Sketch");
     }
 
+
+
+     boolean isDay;
+
+
     @Override
     public void settings() {
         size(1000, 400);  // Canvas size
@@ -25,9 +30,11 @@ public class Sketch extends PApplet {
     if (i % 2 == 0) {
         // Daytime
         background(120, 197, 227);
+        isDay = true;
     } else {
         // Nightime
         background(29, 25, 54);
+        isDay = false;
     }
     }
 
